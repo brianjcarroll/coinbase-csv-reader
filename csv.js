@@ -36,5 +36,4 @@ fs.createReadStream('./coinbasecsv.csv')
     console.log(`Weighted Average Price: $${(sum / bitcoinTotal).toFixed(2)}`);
     console.log(`Total Fees: $${totalFees.toFixed(2)}`);
     console.log(`Total Cash Spent: $${totalSpent.toFixed(2)}`);
-
   });
