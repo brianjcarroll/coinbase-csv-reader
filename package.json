@@ -1,0 +1,14 @@
+{
+  "name": "Coinbase CSV reader",
+  "version": "1.0.0",
+  "description": "Get useful and organized information about your Coinbase BTC buys",
+  "main": "csv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Carroll",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^1.9.3"
+  }
+}
