@@ -1,12 +1,13 @@
 const csv = require('csv-parser');
 const fs  = require('fs');
-
+const args = process.argv.slice(2)
 const arr = [];
+
 let bitcoinTotal  = 0;
 let totalFees     = 0;
 let totalSpent    = 0;
 
-fs.createReadStream('./coinbasecsv.csv')
+fs.createReadStream(args[0])
   .pipe(csv(['Timestamp','Type','BTC','Subtotal','Fees','Total','Currency','Price Per Coin','Payment Method','ID','Share']))
   .on('headers', header => {
 
