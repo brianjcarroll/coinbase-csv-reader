@@ -21,11 +21,12 @@ fs.createReadStream(args[0])
 
     if( typeof total === 'number' && !isNaN(total)
         && (typeof amtPurchased === 'number' && !isNaN(amtPurchased))
-        && isABuy ) {
+        && isABuy )
+    {
       arr.push((pricePerCoin * amtPurchased) + fee);
-      bitcoinTotal += amtPurchased;
-      totalFees += fee;
-      totalSpent += total;
+      bitcoinTotal  += amtPurchased;
+      totalFees     += fee;
+      totalSpent    += total;
     }
 
   }).on('end', () => {
